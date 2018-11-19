@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectColorFromGrid", "SelectColorFromGrid\SelectColorFromGrid.csproj", "{E9B17E81-B9AC-4686-8F3A-ED8D694389B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlCustomClass", "XamlCustomClass\XamlCustomClass.csproj", "{4081228A-91FE-4B8E-B70C-17AE55B08354}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B17E81-B9AC-4686-8F3A-ED8D694389B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B17E81-B9AC-4686-8F3A-ED8D694389B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B17E81-B9AC-4686-8F3A-ED8D694389B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B17E81-B9AC-4686-8F3A-ED8D694389B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4081228A-91FE-4B8E-B70C-17AE55B08354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4081228A-91FE-4B8E-B70C-17AE55B08354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4081228A-91FE-4B8E-B70C-17AE55B08354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4081228A-91FE-4B8E-B70C-17AE55B08354}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96EDD0B8-E221-4903-8E46-FB91E1E2AEA8}
+	EndGlobalSection
+EndGlobal

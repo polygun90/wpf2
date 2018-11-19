@@ -1,0 +1,24 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:src="clr-namespace:SelectColorFromGrid;assembly=SelectColorFromGrid"
+ x:Class="XamlCustomClass.MainWindow"
+ Title="Xaml Custom Class"
+ SizeToContent="WidthAndHeight"
+ ResizeMode="CanMinimize">
+    <StackPanel Orientation="Horizontal">
+        <Button HorizontalAlignment="Center"
+ VerticalAlignment="Center"
+ Margin="24">
+            test
+        </Button>
+        <src:ColorGridBox HorizontalAlignment="Center"
+ VerticalAlignment="Center"
+ Margin="24"
+ SelectionChanged="ColorGridBoxOnSelectionChanged" />
+        <Button HorizontalAlignment="Center"
+ VerticalAlignment="Center"
+ Margin="24">
+            test
+        </Button>
+    </StackPanel>
+</Window>
