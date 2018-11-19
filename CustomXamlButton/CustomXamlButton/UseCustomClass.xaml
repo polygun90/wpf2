@@ -1,0 +1,15 @@
+﻿<Window x:Class="CustomXamlButton.UseCustomClass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:CustomXamlButton"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomXamlButton"
+        mc:Ignorable="d"
+        Title="UseCustomClass" Height="450" Width="800">
+    <StackPanel Name="mystack">
+        <src:CenteredButton>Button Xaml1</src:CenteredButton>
+        <src:CenteredButton>Button Xaml2</src:CenteredButton>
+        <src:CenteredButton>Button Xaml3</src:CenteredButton>
+    </StackPanel>
+</Window>
