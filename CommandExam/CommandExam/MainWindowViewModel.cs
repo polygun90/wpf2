@@ -21,7 +21,7 @@ namespace CommandExam
             set
             {
                 _SelectedEmp = value;
-                OnPropertyChanged("SelectedEmp");
+                OnPropertyChanged();
             }
         }
 
