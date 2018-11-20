@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidthHeightDisplay", "WidthHeightDisplay\WidthHeightDisplay.csproj", "{E78280FF-2B82-4AA7-8FF9-4020F9D7DB69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E78280FF-2B82-4AA7-8FF9-4020F9D7DB69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78280FF-2B82-4AA7-8FF9-4020F9D7DB69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78280FF-2B82-4AA7-8FF9-4020F9D7DB69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78280FF-2B82-4AA7-8FF9-4020F9D7DB69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C8DD77F-90B5-4C19-A2F5-C075B6469343}
+	EndGlobalSection
+EndGlobal
