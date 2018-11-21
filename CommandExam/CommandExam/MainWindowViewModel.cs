@@ -33,7 +33,8 @@ namespace CommandExam
         }
 
         public RelayCommand AddEmpCommand { get; set; }
-        public ObservableCollection<Emp> Emps { get; set; }
+        public ObservableCollection<Emp> Emps { get; set; }
+
         public MainWindowViewModel()
         {
             Emps = new ObservableCollection<Emp>();
