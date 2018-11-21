@@ -1,0 +1,66 @@
+﻿<Window x:Class="MultiBinding.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:local="clr-namespace:MultiBinding"
+ mc:Ignorable="d"
+ Title="사원 리스트" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <local:Emps x:Key="Emps"/>
+        <local:EmpConverter x:Key="EmpConverter"/>
+        <DataTemplate x:Key="EmpListTemplate">
+            <TextBlock>
+                <TextBlock.Text>
+                    <MultiBinding Converter="{StaticResource EmpConverter}"
+ Mode="TwoWay">
+                        <Binding Path="Ename"/>
+                        <Binding Path="Job"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+        <Style x:Key="mystyle" TargetType="{x:Type Control}">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center"> 사원 리스트</TextBlock>
+        <ListBox Width="100" Style="{StaticResource mystyle}"
+ ItemsSource="{Binding Source={StaticResource Emps}}"
+ ItemTemplate="{StaticResource EmpListTemplate}"
+ IsSynchronizedWithCurrentItem="True"/>
+        <TextBlock HorizontalAlignment="Center" Margin="10"> 선택한
+사원</TextBlock>
+        <TextBlock Name="textBlock1" DataContext="{StaticResource Emps}"
+HorizontalAlignment="Center">
+            <TextBlock.Text>
+                <MultiBinding Converter="{StaticResource EmpConverter}"
+ConverterParameter="reverse">
+                    <Binding Path="Ename"/>
+                    <Binding Path="Job"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+        <TextBlock Name="textBlock2" DataContext="{StaticResource Emps}"
+HorizontalAlignment="Center">
+            <TextBlock.Text>
+                <MultiBinding Converter="{StaticResource EmpConverter}">
+                    <Binding Path="Ename"/>
+                    <Binding Path="Job"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+        <TextBox Name="textBox1" DataContext="{StaticResource Emps}"
+Style="{StaticResource mystyle}">
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource EmpConverter}">
+                    <Binding Path="Ename"/>
+                    <Binding Path="Job"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+    </StackPanel>
+</Window>
